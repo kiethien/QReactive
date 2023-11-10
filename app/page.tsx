@@ -1,9 +1,21 @@
-import Image from 'next/image'
+import Hero from "@/components/Hero";
+import QrPDF from "@/components/QrPDF";
+import Qrimage from "@/components/Qrimage";
+import Qrlink from "@/components/Qrlink";
+import Qrmusic from "@/components/Qrmusic";
+import Qrtext from "@/components/Qrtext";
+import Qrwifi from "@/components/Qrwifi";
 
 export default function Home() {
   return (
-    <h1 className='font-bold text-teal-500 text-2xl'>
-      hello
-    </h1>
+    <>
+      <Hero />
+      <Qrlink />
+      <Qrwifi />
+      <QrPDF />
+      <Qrimage />
+      <Qrtext />
+      <Qrmusic />
+    </>
   )
 }
