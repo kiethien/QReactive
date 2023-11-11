@@ -52,25 +52,22 @@ export const NAV_LINKS = [
     {
       title: 'Learn More',
       links: [
-        'About Hilink',
-        'Press Releases',
-        'Environment',
-        'Jobs',
+        'About Qreactive',
         'Privacy Policy',
         'Contact Us',
       ],
     },
     {
-      title: 'Our Community',
-      links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+      title: 'Support',
+      links: ['FAQ', 'Help Center'],
     },
   ];
   
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Admin Officer', value: '123-456-7890' },
-      { label: 'Email Officer', value: 'hilink@akinthil.com' },
+      { label: 'Admin Officer', value: '' },
+      { label: 'Email Officer', value: '' },
     ],
   };
   
