@@ -22,12 +22,14 @@ const Navbar = () => {
         </ul>
 
         <div className='lg:flex hidden'>
-            <Button
-            type='button'
-            title='Login'
-            icon='/user.svg'
-            variant='btn_dark_green'
-            />
+            <Link href="/login-page">
+                <Button
+                type='button'
+                title='Login'
+                icon='/user.svg'
+                variant='btn_dark_green'
+                />
+            </Link>
         </div>
         
         
