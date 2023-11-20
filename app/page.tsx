@@ -1,12 +1,15 @@
 import FunctionEX from "@/components/FunctionEX";
 import Hero from "@/components/Hero";
+import AuthProvider from "@/components/AuthProvider"
 
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <FunctionEX />
+        <AuthProvider>
+        <Hero />
+        <FunctionEX />
+      </AuthProvider>
     </>
   )
 }

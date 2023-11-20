@@ -1,7 +1,7 @@
 import { NAV_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from './Button'
+import AuthLinks from '@/components/authLinks/AuthLinks'
 
 const Navbar = () => {
   return (
@@ -20,18 +20,6 @@ const Navbar = () => {
                 </Link>
             ))}
         </ul>
-
-        <div className='lg:flex hidden'>
-            <Link href="/login-page">
-                <Button
-                type='button'
-                title='Login'
-                icon='/user.svg'
-                variant='btn_dark_green'
-                />
-            </Link>
-        </div>
-        
         
         <Image
             src="menu.svg"
@@ -40,6 +28,8 @@ const Navbar = () => {
             height={32}
             className='inline-block cursor-pointer lg:hidden'
         />
+
+        <AuthLinks />
     </nav>
   )
 }
