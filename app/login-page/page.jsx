@@ -17,13 +17,24 @@ const LoginPage = () => {
     return <div className=''>Loading...</div>;
   }
   return (
-    <div  onClick={()=>signIn("google") }>
-      <Button
-        type='button'
-        title='Login'
-        icon='/user.svg'
-        variant='btn_dark_green'
-      />
+    <div className='container border-2 flexCenter flex-col px-16'>
+      <div  className="border-2" onClick={()=>signIn("google") }>
+        <Button
+          type='button'
+          title='Login with Google'
+          icon='/user.svg'
+          variant='btn_dark_green'
+        />
+      </div>
+
+      <div  className="border-2" onClick={()=>signIn("github") }>
+        <Button
+          type='button'
+          title='Login with Github'
+          icon='/user.svg'
+          variant='btn_dark_green'
+        />
+      </div>
     </div>
   )
 }
