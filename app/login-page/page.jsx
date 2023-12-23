@@ -1,5 +1,5 @@
 "use client";
-import Button from '@/components/Button'
+import styles from "./signin.module.css";
 import React from 'react'
 import  { useSession, signIn } from "next-auth/react"
 import {useRouter} from "next/navigation"
@@ -17,23 +17,13 @@ const LoginPage = () => {
     return <div className=''>Loading...</div>;
   }
   return (
-    <div className='container border-2 flexCenter flex-col px-16'>
-      <div  className="border-2" onClick={()=>signIn("google") }>
-        <Button
-          type='button'
-          title='Login with Google'
-          icon='/user.svg'
-          variant='btn_dark_green'
-        />
-      </div>
-
-      <div  className="border-2" onClick={()=>signIn("github") }>
-        <Button
-          type='button'
-          title='Login with Github'
-          icon='/user.svg'
-          variant='btn_dark_green'
-        />
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <div className={styles.socialButton} onClick={() => signIn("google")}>
+          Sign in with Google
+        </div>
+        <div className={styles.socialButton}>Sign in with Github</div>
+        <div className={styles.socialButton}>Sign in with Facebook</div>
       </div>
     </div>
   )
