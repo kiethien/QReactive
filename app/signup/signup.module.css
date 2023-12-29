@@ -74,7 +74,7 @@
     outline: none;
 }
 
-.formContainerSignIn {
+.formContainerSignUp{
     position: absolute;
     top: 0;
     height: 100%;
@@ -106,7 +106,7 @@
     margin: 20px 0;
 }
 
-.icon  {
+.icon {
     border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
@@ -139,7 +139,7 @@
     width: 200%;
 }
 
-.togglePanelLeft {
+.togglePanelRight {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -157,6 +157,3 @@
 
 
 
-.toggle-right {
-    right: 0;
-}
