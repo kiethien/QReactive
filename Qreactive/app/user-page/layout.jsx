@@ -5,11 +5,9 @@ export default function Layout({ children }) {
       <>
         <html lang="en">
         <body>
-        <AuthProvider>
-            <main className="relative overflow-hidden">
+            <main>
             {children}
           </main>
-        </AuthProvider>
         </body>
         </html>
       </>
