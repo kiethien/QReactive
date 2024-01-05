@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import App from "@/app/user-page/App";
 import "@/app/user-page/style.css"
+import App from "@/app/user-page/App";
 
 const UserPage = () => {
   return (

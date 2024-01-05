@@ -4,14 +4,14 @@ export default function Layout({ children }) {
     return (
       <>
         <html lang="en">
-      <body>
+        <body>
         <AuthProvider>
             <main className="relative overflow-hidden">
             {children}
           </main>
         </AuthProvider>
-      </body>
-    </html>
+        </body>
+        </html>
       </>
     )
   }
