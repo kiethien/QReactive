@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import MyProfile from '@/app/user-page/MyProfile.module.css';
 import './Error.css';
 
-
 function MyProfileContent() {
     const [formData, setFormData] = useState({
         firstName: "",
