@@ -149,3 +149,12 @@
     border-left: 1px solid blue;
     border-right: 1px solid blue;
 }
+
+.overlay {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }

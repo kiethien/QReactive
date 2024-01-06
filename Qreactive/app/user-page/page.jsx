@@ -5,7 +5,10 @@ import App from "@/app/user-page/App";
 
 const UserPage = () => {
   return (
-   <App/>
+    <div className="container">
+      <App />
+    </div>
   );
 };
+
 export default UserPage;

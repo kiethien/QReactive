@@ -52,7 +52,7 @@ const QRLinkGenerator = () => {
         <button className={styles.button1} onClick={generateQr}>Generate QR</button>
         <br />
         <div>Link: {qrLink}</div>
-        {qrImageUrl && <img src={qrImageUrl} alt="Generated QR Code" />}
+        {qrImageUrl && <Image src={qrImageUrl} alt="Generated QR Code" />}
       </div>
     </>
   );

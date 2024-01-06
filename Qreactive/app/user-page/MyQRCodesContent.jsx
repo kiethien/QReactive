@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import MyQR from "@/app/user-page/MyQRCodes.module.css";
+import Image from 'next/image';
 
 function MyQRCodesContent() {
   // State to manage dropdown visibility
@@ -156,7 +157,7 @@ function MyQRCodesContent() {
             data-action="click->admin--qr-filters#createNewBtn"
           >
             <div>
-              <img src="/public/more.png" alt="add" />
+              <img src="more.png" alt="add" />
               <span>Create new QR</span>
             </div>
           </a>
@@ -174,7 +175,7 @@ function MyQRCodesContent() {
               className={MyQR.dropbtn}
             >
               <img
-                src="/public/filter.png"
+                src="filter.png"
                 alt="from"
                 style={{ width: "24px", height: "24px" }}
               />
@@ -202,10 +203,11 @@ function MyQRCodesContent() {
               onClick={() => toggleDropdown("2")}
               className={MyQR.dropbtn}
             >
-              <img
-                src="/public/from.png"
+              <Image
+                src="/from.png"
                 alt="from"
-                style={{ width: "24px", height: "24px" }}
+                width={24}
+                height={24}
               />
             </button>
             <div
@@ -247,7 +249,7 @@ function MyQRCodesContent() {
                         Include in Selection
                       </label>
                   </div>
-                  <img src={code.QRcode} alt={code.name} />
+                  <Image src={code.QRcode} alt={code.name} height={24} width={24}/>
                     <div className={MyQR.qrCodeInfo}>
                       <p>Link: {code.Link}</p>
                       <p>Type: {code.type}</p>
@@ -275,7 +277,7 @@ function MyQRCodesContent() {
                             >
                             PNG
                             <img
-                              src="@//public/qrdowload.png"
+                              src="qrdowload.png"
                               alt="Download SVG"
                               style={{
                                 width: "24px",
@@ -291,7 +293,7 @@ function MyQRCodesContent() {
                             >
                               SVG
                             <img
-                              src="/public/qrdowload.png"
+                              src="qrdowload.png"
                               alt="Download SVG"
                               style={{
                                 width: "24px",
