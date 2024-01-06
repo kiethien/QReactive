@@ -1,7 +1,11 @@
 "use client";
 import AuthProvider from "@/components/AuthProvider"
 import Navbar from "@/components/Navbar";
-export default function Layout({ children }) {
+export default function Layout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
     return (
       <>
         <html lang="en">
@@ -9,7 +13,7 @@ export default function Layout({ children }) {
             <Navbar/>
             <main className="container flex">
             {children}
-          </main>
+            </main>
         </body>
         </html>
       </>
